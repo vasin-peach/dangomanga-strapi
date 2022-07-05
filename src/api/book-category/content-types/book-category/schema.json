@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_categories",
+  "info": {
+    "singularName": "book-category",
+    "pluralName": "book-categories",
+    "displayName": "Book Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_th": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "books": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "mappedBy": "book_categories"
+    },
+    "name_en": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "name_jp": {
+      "type": "string",
+      "pluginOptions": {}
+    }
+  }
+}

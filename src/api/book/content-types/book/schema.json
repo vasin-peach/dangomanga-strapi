@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_th": {
+      "type": "string",
+      "required": true
+    },
+    "book_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::book-type.book-type",
+      "inversedBy": "books"
+    },
+    "book_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book-category.book-category",
+      "inversedBy": "books"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "name_jp": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string",
+      "required": false
+    },
+    "synopsis_th": {
+      "type": "richtext"
+    },
+    "publish": {
+      "type": "string"
+    }
+  }
+}

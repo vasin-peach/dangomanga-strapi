@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * book-type service.
+ * partner service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::book-type.book-type');
+module.exports = createCoreService('api::partner.partner');

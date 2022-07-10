@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "ชื่อพันธมิตร"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "default": "ลิ้งค์เว็บไซต์พันธมิตร"
+    }
+  }
+}

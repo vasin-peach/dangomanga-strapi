@@ -10,39 +10,116 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "name_th": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "type": "string",
-      "required": true
-    },
-    "book_type": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::book-type.book-type",
-      "inversedBy": "books"
-    },
-    "book_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::book-category.book-category",
-      "inversedBy": "books"
-    },
-    "name_en": {
-      "type": "string"
-    },
-    "name_jp": {
-      "type": "string"
+      "required": true,
+      "default": "ชื่อเรื่อง"
     },
     "author": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "type": "string",
-      "required": false
+      "required": false,
+      "default": "ผู้แต่ง"
     },
-    "synopsis_th": {
-      "type": "richtext"
+    "publisher": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "default": "สำนักพิมพ์"
     },
-    "publish": {
-      "type": "string"
+    "translationRight": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "default": "ลิขสิทธิ์การแปลไทย"
+    },
+    "translationRightArranged": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "ลิขสิทธิ์การแปลไทยจัดโดย"
+    },
+    "copyright": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "default": "ลิขสิทธิ์"
+    },
+    "previewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "mascotImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "showLandingInfo": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

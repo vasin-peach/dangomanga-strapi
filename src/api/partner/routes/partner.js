@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * book-type router.
+ * partner router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::book-type.book-type');
+module.exports = createCoreRouter('api::partner.partner');

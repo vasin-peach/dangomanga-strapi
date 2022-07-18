@@ -120,6 +120,14 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "dividerColor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
